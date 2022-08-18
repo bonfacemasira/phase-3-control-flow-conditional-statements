@@ -10,14 +10,15 @@ end
 def hows_the_weather(temperature)
   # your code here
  if temperature < 40
-  "It's brisk out there!"
+  response = "brisk"
  elsif temperature >= 40 && temperature <= 65
-  "It's a little chilly out there!"
+  response = "a little chilly"
  elsif temperature >= 85
-  "It's too dang hot out there!"
+  response = "too dang hot"
 else
-  "It's perfect out there!"
+  response = "perfect"
  end
+ "It's #{response} out there!"
 end
 
 def fizzbuzz(num)
